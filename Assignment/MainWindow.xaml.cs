@@ -96,7 +96,7 @@ namespace Assignment
 
                 allActivities.Add(selectedActivity);
 
-                RefreshScrn();
+                RefreshScrn(); 
             }
 
             totalCost -= selectedActivity.Cost;
