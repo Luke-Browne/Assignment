@@ -57,7 +57,7 @@ namespace Assignment
             allActivities.Add(helicopter);
             allActivities.Add(treking);
             allActivities.Add(surfing);
-            //allActivities.Sort();
+            allActivities.Sort();
 
             // Display in List Box
             lbxActivities.ItemsSource = allActivities; // gives the List Box a source to display from
@@ -75,6 +75,8 @@ namespace Assignment
                 allActivities.Remove(selectedActivity);
 
                 selectedActivities.Add(selectedActivity);
+
+                selectedActivities.Sort();
 
                 RefreshScrn();
             }

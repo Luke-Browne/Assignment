@@ -9,7 +9,7 @@ namespace Assignment
 {
     public enum Type { Land, Water, Air}
 
-    public class Activity : IComparable
+    public class Activity : IComparable<Activity>
     {
         // properties
         public string Name { get; set; }
@@ -34,9 +34,12 @@ namespace Assignment
             return $"{Name} - {Date.ToShortDateString()}";
         }
 
-        public int CompareTo(object obj)
+        public int CompareTo(Activity other)
         {
-            throw new NotImplementedException();
+            DateTime x = this.Date;
+            DateTime y = other.Date;
+
+            return x.CompareTo(y);
         }
     }
 }
