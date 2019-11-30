@@ -57,6 +57,7 @@ namespace Assignment
             allActivities.Add(helicopter);
             allActivities.Add(treking);
             allActivities.Add(surfing);
+            //allActivities.Sort();
 
             // Display in List Box
             lbxActivities.ItemsSource = allActivities; // gives the List Box a source to display from
